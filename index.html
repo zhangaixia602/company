@@ -2,19 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <meta http-equiv="Content-Type" content="text/html; chartset=UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+        <title>达英和自动化工程有限公司</title>
+        <link rel="stylesheet" href="/css/common.css">
     </head>
     <body>
-        <div class="search_box">
-            <div><label class="search-item pinkitec-locales-element">production.order</label><input type="text" id="productionOrder" /></div>
-            <div><label class="search-item pinkitec-locales-element">production.start</label><input type="text" id="startTime" /></div>
-            <div><label class="search-item pinkitec-locales-element">production.end</label><input type="text" id="endTime" /></div>
-            <div class="prodcution-line">
-                <label class="search-item pinkitec-locales-element">production.workCenter</label>
-                <div id="workCenter"></div>
+        <div class="header clearfix">
+            <div class="wrapper">
+                <a class="logo">
+                    <img src="./img/index/logo.png">
+                </a>
             </div>
-            <span class="btn pinkitec-locales-element" id="searchBtn">production.search</span>
         </div>
-        <div id="gantt">达英和官网已创建</div>
+        <div class="content"></div>
+        <div class="footer"></div>
+        <div id="suspensionBox"></div>
+        <script src="plugin/jquery-3.1.1.min.js"></script>
+        <script src="locales/index.js"></script>
     </body>
 </html>
