@@ -1,3 +1,3 @@
-var localesData = {
-    "production.order": "ProductNO"
+localesData = {
+    "langagesCN": "CN"
 };
