@@ -1,7 +1,8 @@
 (function() {
+    console.log(1)
     var currentLang = params.ln || localStorage.getItem("PC-LANG") || "zh-CN";
     $.holdReady(true); //hold住，等待a.js加载，后续代码不能执行
-    $.getScript("./locales/" + currentLang.replace("_","-") + ".messages.js", function() {
+    $.getScript("./locales/" + currentLang+ ".messages.js", function() {
         $.holdReady(false);
         // 初始化多语言元素
         $("locales-element").each(function(index, item) {
