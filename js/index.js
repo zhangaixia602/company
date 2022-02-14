@@ -7,24 +7,40 @@ var _hmt = _hmt || [];
     s.parentNode.insertBefore(hm, s);
 })();
 $(function() {
-    var $li = $(".nav li"),
+    var menuData=window.menuData;
+        $li = $(".nav li"),
+        $content=$(".content"),
         $langages=$(".langages");
     $li.click(function() {
+        var id=$(this).prop('title');
+        menuData.forEach((item,index)=>{
+            if(item.id===id){
+                $content.load(item.component);
+            }
+        })
         $(this).addClass("active").siblings().removeClass("active")
     });
-    $("#suspensionBox li").on("click", function() {
-        $(this)
-            .addClass("active")
-            .siblings()
-            .removeClass("active");
-        $(this)
-            .find("div")
-            .css("display", "block");
-        $(this)
-            .siblings()
-            .find("div")
-            .css("display", "none");
-    });
+    $li.hover(
+        function() {
+            $(this).find('div').addClass("show");
+        },
+        function() {
+            $(this).find('div').removeClass("show");
+        }
+    );
+    $(".nav li:eq(0)").click();
+    $("#suspension_box li:lt(2)").hover(
+        function() {
+            $(this).css({
+                left:"-8rem"
+            });
+        },
+        function() {
+            $(this).css({
+                left:0
+            });
+        }
+    )
     //回到顶部
     window.onscroll = function() {
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -32,15 +48,12 @@ $(function() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             };
-        } else {
-            $("#suspensionBox li:eq(0)").click();
         }
     };
-    //切换语言
+     //切换语言
     $langages.click(function(){
         var index=$(this).index();
         localStorage.setItem("PC-LANG",index===0 ? "zh-CN" : "en-US");
         window.location.reload();
     })
-    $("#suspensionBox li:eq(0)").click();
 });

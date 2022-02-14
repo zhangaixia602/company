@@ -9,17 +9,53 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
         <title>达英和自动化工程有限公司</title>
         <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./plugin/font/iconfont.css">
     </head>
     <body>
         <div class="header">
             <div class="wrapper">
                 <a class="logo">
-                    <img src="./img/index/logo.png">
+                    <img src="./img/index/logo.png" width="100%">
                 </a>
                 <div class="header-nav">
                     <ul class="nav navbar-nav">
-                        <li><a>首页</a></li>
-                        <li><a>关于我们</a></li>
+                        <li title="homePage"><a class="locales-element">homePage</a></li>
+                        <li title="businessScope">
+                            <a class="locales-element">businessScope</a>
+                            <div class="subnav">
+                                <span class="locales-element">petrochemicalIndustry</span>
+                                <span class="locales-element">power</span>
+                                <span class="locales-element">municipalSystem</span>
+                                <span class="locales-element">automation</span>
+                                <span class="locales-element">monitore</span>
+                                <span class="locales-element">upgrade</span>
+                            </div>
+                        </li>
+                        <li title="productCenter">
+                            <a class="locales-element">productCenter</a>
+                            <div class="subnav show">
+                                <span class="locales-element">smartphone</span>
+                                <span class="locales-element">technology</span>
+                                <span class="locales-element">visual</span>
+                                <span class="locales-element">equipment</span>
+                                <span class="locales-element">informatizationEnergy</span>
+                                <span class="locales-element">storage</span>
+                                <span class="locales-element">wastewater</span>
+                                <span class="locales-element">industrial</span>
+                                <span class="locales-element">process</span>
+                                <span class="locales-element">analytical</span>
+                            </div>
+                        </li>
+                        <li><a class="locales-element">technicalService</a></li>
+                        <li title="aboutD">
+                            <a class="locales-element">aboutD</a>
+                            <div class="subnav">
+                                <span class="locales-element">aboutUs</span>
+                                <span class="locales-element">contactUs</span>
+                                <span class="locales-element">talent</span>
+                                <span class="locales-element">culture</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="header-right">
@@ -33,11 +69,26 @@
         </div>
         <div class="content"></div>
         <div class="footer"></div>
-        <div id="suspensionBox"></div>
+        <div id="suspension_box">
+            <ul>
+                <li>
+                    <i class="icon iconfont icon-dianhua"></i>
+                    <div>0755-8326-9919</div>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-xiaoxi"></i>
+                    <div></div>
+                </li>
+                <li id="top">
+                    <i class="icon iconfont icon-dingbu"></i>
+                </li>
+            </ul>
+        </div>
         <script src="./plugin/jquery-3.1.1.min.js"></script>
-        <script src="./locales/en-US.messages.js"></script>
-        <script src="./locales/zh-CN.messages.js"></script>
-        <script src="./locales/index.is"></script>
+        <script src="./js/main.js"></script>
         <script src="./js/index.js"></script>
+        <script src="./locales/en-US.messages.js"></script>
+        <script src="./locales/zh-CN.messages.js?v=7"></script>
+        <script src="./locales/common.js"></script>
     </body>
 </html>

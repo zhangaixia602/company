@@ -1,3 +1,33 @@
-localesData = {
-    "langagesCN": "中文"
+// window.CNlocalesData = {
+//     "langagesCN": "中文",
+//     "homePage": "首页",
+//     "aboutUs": "关于达英和"
+// };
+var localesData = {
+    "langagesCN": "中文",
+    "homePage": "首页",
+    "businessScope":"业务领域",
+    "petrochemicalIndustry":"石油化工",
+    "power":"电力",
+    "municipalSystem":"市政水处理信息化系统",
+    "automation":"水利自动化工程",
+    "monitore":"环境监控系统",
+    "upgrade":"老旧系统升级",
+    "productCenter":"产品中心",
+    "smartphone":"智能手机APP远程服务系统",
+    "technology":"物联网和云技术的运程服务系统",
+    "visual":"可视化工厂系统软件",
+    "equipment":"设备运行管理软件",
+    "informatizationEnergy":"信息化能源管控软件",
+    "storage":"储运业务管理软件",
+    "wastewater":"废水水处理设备",
+    "industrial":"工业控制器",
+    "process":"过程仪表",
+    "analytical":"分析仪表",
+    "aboutD": "关于达英和",
+    "aboutUs":"关于我们",
+    "culture":"企业文化",
+    "contactUs":"联系我们",
+    "talent":"人才招聘",
+    "technicalService":"技术服务",
 };
